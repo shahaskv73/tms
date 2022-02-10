@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,8 @@
 </head>
 <body>
     <form action="" align="center">
-        <img src="/image/Travel-tips.png" alt="" height="350px"> <br><br>
+        <img src="{% static 'images/Travel-tips.png' %}" alt=""> <br><br>
+        
         <label for="">Username :</label>
         <input type="text" name="" id=""> <br> <br>
         <label for="">Password :</label>
