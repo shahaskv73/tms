@@ -1,0 +1,25 @@
+.p1{
+    color:brown;
+    font-size: x-large;
+    font-style: oblique;
+    text-align: center;
+    font-weight: 700;
+    text-decoration :underline;
+    
+
+}
+.p2{
+    font-weight: 700;
+text-align: center;
+    color:red;
+    
+    
+}
+div{
+    color:blue;
+    text-align: center;
+  
+}
+div p{
+    color: blueviolet;
+}
