@@ -1,0 +1,32 @@
+/* body{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    background: no-repeat;
+    background-position:center ;
+    background-size: 800px;
+    
+    
+} */
+
+    
+    
+
+div{
+    color:blue;
+    text-align: center;
+  
+}
+div p{ 
+  color: blueviolet;
+    
+   
+    padding :20px 2px 20px 2px ;
+    margin: 20px 500px 20px 500px ; 
+    
+
+    
+}
+#d3{
+    background-color: green;
+    color: aliceblue;
+}
