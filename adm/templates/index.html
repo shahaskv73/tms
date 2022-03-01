@@ -1,7 +1,147 @@
-{% extends 'master.html' %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holiday</title>
+<!--
+Holiday Template
+http://www.templatemo.com/tm-475-holiday
+-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">  
+<link href="{% static 'css/flexslider.css' %}" rel="stylesheet">
+<link href="{% static 'css/templatemo-style.css' %}" rel="stylesheet">
+<link href="{% static 'css/login.css' %}" rel="stylesheet">
+<link href="{% static 'css/signup.css' %}" rel="stylesheet">
+</head>
+<body>
+  
 
-{% block child_content %}
+
+
+    <div class="tm-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+                        <a href="#" class="tm-site-name">Holiday</a>	
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-9">
+                        <div class="mobile-menu-icon">
+                        <i class="fa fa-bars"></i>
+                      </div>
+                        <nav class="tm-nav">
+                          <ul>
+                            
+                              <li><a href="{% url 'index'%}" class="active">Home</a></li>
+                              <li><a href="{% url 'about'%}">About</a></li>
+                              <li><a href="{% url 'tours'%}">Our Tours</a></li>
+                              <li><a href="{% url 'contact'%}">Contact</a></li>
+                             
+                              
+                              
+                          </ul>
+                      </nav>		
+                    </div>				
+                </div>
+            </div>	  	
+        </div>
+        <div class="uu">
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="hi">Login</button>
+        
+          <div id="id01" class="modal">
+            
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                
+              </div>
+          
+              <div class="container1">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container1" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+        
+          <!-- signup page -->
+        
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="hi">Sign Up</button>
+                    
+        <div id="id02" class="modal1">
+          <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span>
+        </div>
+          
+            <div class="container2">
+              <h1>Sign Up</h1> <br>
+              <p>Please fill in this form to create an account.</p>
+              <hr> 
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+        
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+        
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        
+              <div class="clearfix1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1">Cancel</button>
+                <button type="submit" class="signupbtn1">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+        
+        </div>
   <!-- Banner -->
 	<section class="tm-banner">
 		<!-- Flexslider -->
@@ -405,5 +545,12 @@
 
 	  	});
 	</script>
-	{% endblock %}
- 
+	 <footer class="tm-black-bg">
+		<div class="container">
+			<div class="row">
+				<p class="tm-copyright-text">Copyright &copy; 2084 Your Company Name</p>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

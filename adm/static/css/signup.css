@@ -10,7 +10,14 @@ input[type=text], input[type=password] {
   border: none;
   background: #f1f1f1;
 }
-
+.uu{
+  background-color:black;
+  padding-left: 1200px;
+}
+.hi{
+  background-color: #FCDD44;
+  color: black;
+}
 
 
 input[type=text]:focus, input[type=password]:focus {

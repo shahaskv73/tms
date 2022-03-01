@@ -7,11 +7,11 @@ from django.http import HttpResponse
 def index(request):
     return render(request,'index.html')
 
-def login(request):
-    return render(request,'login.html')    
+# def login(request):
+#     return render(request,'login.html')    
 
-def signup(request):
-    return render(request,'Signup.html')
+# def signup(request):
+#     return render(request,'Signup.html')
 
 def tours(request):
     return render(request,'tours.html')
