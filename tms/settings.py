@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'index',
     'adm',
     'user',
     'hotel',
@@ -124,7 +125,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[
-os.path.join(BASE_DIR,'adm/static')
+os.path.join(BASE_DIR,'index/static'),
+os.path.join(BASE_DIR,'adm/static'),
+os.path.join(BASE_DIR,'user/static')
 
 ]
     
