@@ -5,19 +5,22 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request,'index.html')
+    return render(request,'index/index.html')
 
-# def login(request):
-#     return render(request,'login.html')    
+def login(request):
+    return render(request,'index/login.html')    
 
-# def signup(request):
-#     return render(request,'Signup.html')
+def signup(request):
+    return render(request,'index/Signup.html')
 
 def tours(request):
-    return render(request,'tours.html')
+    return render(request,'index/tours.html')
   
 def contact(request):
-    return render(request,'contact.html')
+    return render(request,'index/contact.html')
 
 def about(request):
-    return render(request,'about.html')  
+    return render(request,'index/about.html')  
+
+def forget_password(request):
+    return render(request,'index/forget_password.html')      

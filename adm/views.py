@@ -2,10 +2,10 @@ from django.shortcuts import render
 
 # Create your views here.
 def dashboard(request):
-    return render(request,'dashboard.html')
+    return render(request,'adm/dashboard.html')
 
 def master(request):
-    return render(request,'master.html')     
+    return render(request,'adm/master.html')     
 
  
 
