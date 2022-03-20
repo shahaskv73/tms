@@ -11,7 +11,7 @@ def login(request):
     return render(request,'index/login.html')    
 
 def signup(request):
-    return render(request,'index/Signup.html')
+    return render(request,'index/signup.html')
 
 def tours(request):
     return render(request,'index/tours.html')
