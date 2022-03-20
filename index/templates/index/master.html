@@ -20,8 +20,8 @@ http://www.templatemo.com/tm-475-holiday
 	<link href="{% static 'css/templatemo-style.css' %}" rel="stylesheet">
 	<link href="{% static 'css/login.css' %}" rel="stylesheet">
 	<link href="{% static 'css/signup.css' %}" rel="stylesheet">
-	
-	
+
+
 </head>
 
 <body>
@@ -36,7 +36,7 @@ http://www.templatemo.com/tm-475-holiday
 					<a href="#" class="tm-site-name">Holidays</a>
 				</div>
 				<div class="col-lg- col-md-8 col-sm-9">
-					
+
 					<div class="mobile-menu-icon">
 						<i class="fa fa-bars"></i>
 					</div>
@@ -46,22 +46,22 @@ http://www.templatemo.com/tm-475-holiday
 							<li><a href="{% url 'index'%}" class="active">Home</a></li>
 							<li><a href="{% url 'about'%}">About</a></li>
 							<li><a href="{% url 'tours'%}">Our Tours</a></li>
-							<li><a href="{% url 'contact'%}">Contact</a></li> 
-							<div class="ll" >
-								<button onclick="window.location.href='/login'">Login</button>
+							<li><a href="{% url 'contact'%}">Contact</a></li>
+							<div class="ll">
+							  <button onclick="window.location.href='/login'">Login</button>
 						</ul>
 					</nav>
 				</div>
-			
+
 
 			</div>
 		</div>
 	</div>
 
-    {% block child_content %}
+	{% block child_content %}
 
-    {% endblock %}
-    <footer class="tm-black-bg">
+	{% endblock %}
+	<footer class="tm-black-bg">
 		<div class="container">
 			<div class="row">
 				<p class="tm-copyright-text">Your Holidays</p>
@@ -71,4 +71,3 @@ http://www.templatemo.com/tm-475-holiday
 </body>
 
 </html>
-    
