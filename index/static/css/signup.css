@@ -24,6 +24,7 @@ button {
   background-color:#FCDD44;
   color: black;
   padding: 14px 20px;
+ 
   margin: 8px 0;
   border: none;
   cursor: pointer;
@@ -37,11 +38,20 @@ button {
 .ll, .u{
   float: right;
   padding-top: 8px;
+  padding-left: 30px;
   color: white;
   text-decoration: none;
   
   
 }
+.mm{
+  float: right;
+  padding-top: 8px;
+  padding-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
 .hy{
   margin: 0px 0px 0px 135px;
 }

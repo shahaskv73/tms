@@ -35,7 +35,7 @@ http://www.templatemo.com/tm-475-holiday
 				<div class="col-lg-4 col-md-4 col-sm-3 tm-site-name-container">
 					<a href="#" class="tm-site-name">Holidays</a>
 				</div>
-				<div class="col-lg- col-md-8 col-sm-9">
+				<div class="col-lg-8 col-md-8 col-sm-9">
 
 					<div class="mobile-menu-icon">
 						<i class="fa fa-bars"></i>
@@ -45,10 +45,19 @@ http://www.templatemo.com/tm-475-holiday
 
 							<li><a href="{% url 'index'%}" class="active">Home</a></li>
 							<li><a href="{% url 'about'%}">About</a></li>
-							<li><a href="{% url 'tours'%}">Our Tours</a></li>
+							
 							<li><a href="{% url 'contact'%}">Contact</a></li>
-							<div class="ll">
-							  <button onclick="window.location.href='/login'">Login</button>
+							<li>
+								<div class="ll">
+									<button onclick="window.location.href='/hotel_login'">List Your Place</button>
+									
+							
+							<li>
+								<div class="mm">
+									<button onclick="window.location.href='/login'">Login</button>
+							</li>
+							
+							
 						</ul>
 					</nav>
 				</div>

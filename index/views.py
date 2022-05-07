@@ -13,6 +13,12 @@ def login(request):
 def signup(request):
     return render(request,'index/signup.html')
 
+def hotel_login(request):
+    return render(request,'index/hotel_login.html')    
+
+def hotel_signup(request):
+    return render(request,'index/hotel_signup.html')    
+
 def tours(request):
     return render(request,'index/tours.html')
   
